@@ -10,7 +10,7 @@ let alarmsArray = [];
 // if any user-entered value is a single digit, prefix with a zero, eg. 6 -> 06
 const appendZero = (value) => {
     // if user has not given any value set it to zero
-    if(!value) value = 0;
+    if (!value) value = 0;
     value = value < 10 ? `0${value}` : value;
     return value;
 }
@@ -59,6 +59,9 @@ setInterval(function () {
         hours = hours - 12;
     } else if (hours < 12) {
         AMPM = "AM";
+        if (hours == 0) {
+            hours = 12
+        }
     }
     let minutes = currentTime.getMinutes();
     let seconds = currentTime.getSeconds();
