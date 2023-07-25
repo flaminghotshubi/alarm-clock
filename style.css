@@ -1,0 +1,55 @@
+body {
+    background-image: url("./assets/purple-pink-watercolor-texture-background.jpg");
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.main-cont {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.current-time {
+    box-sizing: border-box;
+    position: absolute;
+    top: 10vh;
+    font-size: 5vw;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 3%;
+}
+
+.purple-div {
+    background-color: #8854d0;
+    color: #ffffff;
+}
+
+.yellow-border {
+    border: 5px solid #fff200;
+}
+
+.purple-border {
+    border: 5px solid #8854d0;
+}
+
+.create-alarm {
+    position: absolute;
+    top: 35vh;
+    display: flex;
+}
+
+input[type=number] {
+    width: 10vw;
+}
+
+.all-alarms {
+    position: absolute;
+    top: 50vh;
+    width: 30%;
+}
+
+.alarm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
